@@ -24,10 +24,9 @@ cal_cor <- cor(cal[,5:24],use = "pairwise.complete.obs") %>%
   rownames_to_column("index") %>% 
   filter(str_detect(index, 'iwi|ici|whyd|chyd|wchem|cchem|wsed|csed|wconn|cconn|wtemp|ctemp|whabt|chabt')) %>%
   select(c("index",cal_y)) %>%
-  gather("variable", "value", -1) %>%
-  mutate(rel_value = )
+  gather("variable", "value", -1)
 
 cal_cor_gg <- ggplot(cal_cor, aes(x = index, y = variable)) +
-  geom_point(aes(size = abs(value), color = value))
+  geom_point(aes(size = abs(value)/max(abs(value)), color = value))
 cal_cor_gg
 
