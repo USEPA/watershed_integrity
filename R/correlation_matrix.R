@@ -1,6 +1,7 @@
 # Packages
 library(tidyverse)
 library(here)
+library(stringr)
 
 wi <- unique(read_csv(here("data/watershed_integrity_new.csv")))
 
@@ -17,6 +18,10 @@ cal <- wi %>%
   spread(key = variable, value = value) %>%
   select(c(cal_id,cal_y,cal_x))
 
-cor(cal[,5:24],use = "pairwise.complete.obs")
+cor(cal[,5:24],use = "pairwise.complete.obs")%>%
+  data.frame() %>%
+  rownames_to_column() %>% 
+  filter(str_detect(rowname, 'iwi|ici|whyd|chyd|wchem|cchem|wsed|csed|wconn|cconn|wtemp|ctemp|whabt|chabt')) %>%
+  select(c("rowname",cal_y))
 
 
