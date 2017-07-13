@@ -2,6 +2,7 @@
 library(tidyverse)
 library(here)
 library(stringr)
+library(corrplot)
 
 wi <- unique(read_csv(here("data/watershed_integrity_new.csv")))
 
@@ -18,10 +19,15 @@ cal <- wi %>%
   spread(key = variable, value = value) %>%
   select(c(cal_id,cal_y,cal_x))
 
-cor(cal[,5:24],use = "pairwise.complete.obs")%>%
+cal_cor <- cor(cal[,5:24],use = "pairwise.complete.obs") %>%
   data.frame() %>%
-  rownames_to_column() %>% 
-  filter(str_detect(rowname, 'iwi|ici|whyd|chyd|wchem|cchem|wsed|csed|wconn|cconn|wtemp|ctemp|whabt|chabt')) %>%
-  select(c("rowname",cal_y))
+  rownames_to_column("index") %>% 
+  filter(str_detect(index, 'iwi|ici|whyd|chyd|wchem|cchem|wsed|csed|wconn|cconn|wtemp|ctemp|whabt|chabt')) %>%
+  select(c("index",cal_y)) %>%
+  gather("variable", "value", -1) %>%
+  mutate(rel_value = )
 
+cal_cor_gg <- ggplot(cal_cor, aes(x = index, y = variable)) +
+  geom_point(aes(size = abs(value), color = value))
+cal_cor_gg
 
