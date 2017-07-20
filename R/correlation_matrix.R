@@ -29,7 +29,7 @@ cal_cor <- cor(cal[,5:24],use = "pairwise.complete.obs") %>%
 cal_cor_gg <- ggplot(cal_cor, aes(x = index, y = variable)) +
   geom_point(aes(size = abs(value), color = value)) + 
   scale_color_viridis_c(direction = -1, name = "Pearson\nCorrelation") +
-  scale_size(range = c(0,6), guide = FALSE) +
+  scale_size(range = c(1,6)) +
   theme_ipsum() +
   scale_x_discrete(position = "top") +
   labs(x = "", y = "") +
