@@ -28,8 +28,11 @@ cal_cor <- cor(cal[,5:24],use = "pairwise.complete.obs") %>%
 
 cal_cor_gg <- ggplot(cal_cor, aes(x = index, y = variable)) +
   geom_point(aes(size = abs(value), color = value)) + 
-  scale_color_viridis_c(direction = -1, name = "Pearson\nCorrelation") +
-  scale_size(range = c(1,6)) +
+  scale_color_viridis_c(name = "Pearson\nCorrelation",
+                        guide = guide_legend(override.aes = 
+                                               list(color = viridis::viridis(3,direction = -1),
+                                                    size = c(6,1,6)))) +
+  scale_size(range = c(1,6),guide = FALSE) +
   theme_ipsum() +
   scale_x_discrete(position = "top") +
   labs(x = "", y = "") +
