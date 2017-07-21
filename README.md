@@ -1,4 +1,4 @@
-# rethinking_tsi
+# watershed_integrity
 
 This repository contains the R code, data, and documents assocated with the analysis in:
 
