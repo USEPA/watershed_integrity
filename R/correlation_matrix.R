@@ -25,7 +25,7 @@ cal_cor_df <- cor(cal[,5:24],use = "pairwise.complete.obs") %>%
   filter(str_detect(index, 'iwi|ici|whyd|chyd|wchem|cchem|wsed|csed|wconn|cconn|wtemp|ctemp|whabt|chabt'))  %>%
   select(c("index",cal_y))
          
-write_csv(round(cal_cor_df, 3), path = "data/cal_correlations.csv")
+write_csv(data.frame(cal_cor[,1],round(cal_cor_df[,-1], 3)), path = "data/cal_correlations.csv")
 
 cal_cor <- cal_cor_df  %>%
   gather("variable", "value", -1)
