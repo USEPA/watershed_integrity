@@ -2,7 +2,7 @@
 library(tidyverse)
 library(here)
 library(stringr)
-library(corrplot)
+
 
 wi <- unique(read_csv(here("data/watershed_integrity_new.csv")))
 
