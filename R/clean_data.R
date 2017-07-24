@@ -113,14 +113,20 @@ lil_miami_n_long <- lil_miami_n %>%
   mutate(watershed = "east fork little miami river")
 
 nar_lakes_long <- nar_lakes %>%
-  left_join(nar_lake_sites, by = "comid") %>%
+  left_join(nar_lake_sites, by = c("comid")) %>%
   select(comid, watershed, site, everything()) %>%
   gather(variable, value, 5:31) %>%
   rename(waterbody_type = `waterbody type`) %>%
-  mutate(watershed = "narragansett bay")
+  mutate(watershed = "narragansett bay") 
+  #%>%
+  #Didn't quite do it as some of the other metrics are different.  Need to select
+  #This out from nar_lakes and add site in manually, then rbind back in.
+  filter(!(site == "Deep" & near(value, 2.58016230))) %>% #Sites had one duplicate comid
+  filter(!(site == "Schoolhouse" & near(value, 2.05110274)))  #Sites had one duplicate comid
+
 
 nar_streams_long <- nar_streams %>%
-  left_join(nar_stream_sites, by = "comid") %>%
+  left_join(nar_stream_sites, by = c("comid")) %>%
   select(comid,watershed,site, everything()) %>%
   gather(variable, value, 5:30) %>%
   rename(waterbody_type = `waterbody type`) %>%
