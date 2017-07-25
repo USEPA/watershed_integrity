@@ -27,7 +27,6 @@
 #'           height = 5, units = "in", dpi = 300)
 corr_fig <- function(data, ws, x, y, method = "pearson", 
                      output_csv = NULL, ...){
-  browser()
   id_cols <- names(data)[1:4]
   df <- dplyr::filter(data, watershed == ws)
   df <- tidyr::spread(df, key = variable, value = value)
