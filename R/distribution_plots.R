@@ -5,7 +5,7 @@ library(stringr)
 library(hrbrthemes)
 library(ggjoy)
 
-wi <- unique(read_csv(here("data/watershed_integrity_new.csv")))
+wi <- unique(read_csv(here("data/watershed_integrity_new_2.csv")))
 
 
 wi_joy_data <- wi %>%
@@ -19,7 +19,7 @@ iwi_joy_ws <- ggplot(wi_joy_data, aes(x = iwi, y = watershed)) +
   theme_ipsum() +
   labs(x = "", y = "")
 
-ici_joy_ws <- ggplot(wi_joy, aes(x = ici, y = watershed)) +
+ici_joy_ws <- ggplot(wi_joy_data, aes(x = ici, y = watershed)) +
   geom_joy(rel_min_height = 0.001, scale = 0.9, bandwidth = 0.04) +
   theme_ipsum() +
   labs(x = "", y = "")
@@ -42,10 +42,10 @@ all_index_joy <- ggplot(index_joy_data, aes(x = value, y = variable)) +
   labs(x = "", y = "")
 all_index_joy
 
-ggsave(filename = "iwi_joy_ws_fig.jpg", plot = iwi_joy_ws, width = 7, height = 5, 
+ggsave(filename = here("figures/iwi_joy_ws_fig.jpg"), plot = iwi_joy_ws, width = 7, height = 5, 
        units = "in", dpi = 300)
-ggsave(filename = "ici_joy_ws_fig.jpg", plot = ici_joy_ws, width = 7, height = 5, 
+ggsave(filename = here("figures/ici_joy_ws_fig.jpg"), plot = ici_joy_ws, width = 7, height = 5, 
        units = "in", dpi = 300)
-ggsave(filename = "all_index_joy_fig.jpg", plot = all_index_joy, width = 7, height = 9, 
+ggsave(filename = here("figures/all_index_joy_fig.jpg"), plot = all_index_joy, width = 7, height = 9, 
        units = "in", dpi = 300)
 
