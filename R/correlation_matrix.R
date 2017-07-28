@@ -5,7 +5,7 @@ library(stringr)
 library(hrbrthemes)
 source("R/corr_fig.R")
 
-wi <- unique(read_csv(here("data/watershed_integrity_new.csv")))
+wi <- unique(read_csv(here("data/watershed_integrity_new_2.csv")))
 
 x <- c("iwi", "ici","wchem","cchem","whabt","chabt","wsed","csed","whyd",
            "chyd","wtemp","ctemp","wconn","cconn")
@@ -25,14 +25,3 @@ for(i in watersheds){
              filename = paste0("figures/", ws_abb, "_cor_fig.jpg"), 
              width = 7,height = 5, units = "in", dpi = 300)
 }
-
-
-
-cal_y <- c("logNdif","dN15chironimid","total_in","xcmgw","xembed","fishMMI",
-           "max_tempC_summer","phase")
-
-chop_y <- c("WetPercentage","WetCntAll", "WetCntWhole", "WetCntPartial")
-
-eflr_y <- c("log10TNOxdif",)
-
-nb_y <- c("log10no3","log10chloride", "pN15", "dN15BOM")

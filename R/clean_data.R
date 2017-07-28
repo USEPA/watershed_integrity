@@ -1,6 +1,7 @@
 # Tidy-rific
 library("tidyverse")
 library("readxl")
+rm(list=ls())
 
 # Write out copies of raw as csv
 
@@ -147,3 +148,9 @@ ws_integ_df <- bind_rows(dfs) %>%
   unique()  %>% #Original spreadsheets contained some duplicate rows
   na.omit() # Had some extra rows in original spreadsheets
 write_csv(ws_integ_df, "data/watershed_integrity_orig.csv")
+
+# Run update_iwi.R
+source(here("R/update_iwi.R"))
+
+# Run new_nar_sites.R
+source(here("R/new_nar_sites.R"))
