@@ -3742,26 +3742,26 @@ comid,watershed,site,waterbody_type,variable,value
 9405998,choptank,Upper Choptank River,wetland,WetCntAll,10
 9405998,choptank,Upper Choptank River,wetland,WetCntWhole,8
 9405998,choptank,Upper Choptank River,wetland,WetCntPartial,2
-9406000,choptank,Tuckahoe Creek,wetland,iwi_old,0.170943345
-9406000,choptank,Tuckahoe Creek,wetland,whyd_old,0.706109381
-9406000,choptank,Tuckahoe Creek,wetland,wchem_old,0.78676859
-9406000,choptank,Tuckahoe Creek,wetland,wsed_old,0.782574884
-9406000,choptank,Tuckahoe Creek,wetland,wconn_old,0.769398479
-9406000,choptank,Tuckahoe Creek,wetland,wtemp_old,0.701878094
-9406000,choptank,Tuckahoe Creek,wetland,whabt_old,0.728105458
-9406000,choptank,Tuckahoe Creek,wetland,ici_old,0.17498541
-9406000,choptank,Tuckahoe Creek,wetland,chyd_old,0.706109381
-9406000,choptank,Tuckahoe Creek,wetland,cchem_old,0.796594562
-9406000,choptank,Tuckahoe Creek,wetland,csed_old,0.786048139
-9406000,choptank,Tuckahoe Creek,wetland,cconn_old,0.769469845
-9406000,choptank,Tuckahoe Creek,wetland,ctemp_old,0.701878094
-9406000,choptank,Tuckahoe Creek,wetland,chabt_old,0.732807801
-9406000,choptank,Tuckahoe Creek,wetland,CatAreaSqKM,2.4435
-9406000,choptank,Tuckahoe Creek,wetland,WetAREASqM,57759.15221
-9406000,choptank,Tuckahoe Creek,wetland,WetPercentage,2.363788
-9406000,choptank,Tuckahoe Creek,wetland,WetCntAll,3
-9406000,choptank,Tuckahoe Creek,wetland,WetCntWhole,3
-9406000,choptank,Tuckahoe Creek,wetland,WetCntPartial,0
+9406e3,choptank,Tuckahoe Creek,wetland,iwi_old,0.170943345
+9406e3,choptank,Tuckahoe Creek,wetland,whyd_old,0.706109381
+9406e3,choptank,Tuckahoe Creek,wetland,wchem_old,0.78676859
+9406e3,choptank,Tuckahoe Creek,wetland,wsed_old,0.782574884
+9406e3,choptank,Tuckahoe Creek,wetland,wconn_old,0.769398479
+9406e3,choptank,Tuckahoe Creek,wetland,wtemp_old,0.701878094
+9406e3,choptank,Tuckahoe Creek,wetland,whabt_old,0.728105458
+9406e3,choptank,Tuckahoe Creek,wetland,ici_old,0.17498541
+9406e3,choptank,Tuckahoe Creek,wetland,chyd_old,0.706109381
+9406e3,choptank,Tuckahoe Creek,wetland,cchem_old,0.796594562
+9406e3,choptank,Tuckahoe Creek,wetland,csed_old,0.786048139
+9406e3,choptank,Tuckahoe Creek,wetland,cconn_old,0.769469845
+9406e3,choptank,Tuckahoe Creek,wetland,ctemp_old,0.701878094
+9406e3,choptank,Tuckahoe Creek,wetland,chabt_old,0.732807801
+9406e3,choptank,Tuckahoe Creek,wetland,CatAreaSqKM,2.4435
+9406e3,choptank,Tuckahoe Creek,wetland,WetAREASqM,57759.15221
+9406e3,choptank,Tuckahoe Creek,wetland,WetPercentage,2.363788
+9406e3,choptank,Tuckahoe Creek,wetland,WetCntAll,3
+9406e3,choptank,Tuckahoe Creek,wetland,WetCntWhole,3
+9406e3,choptank,Tuckahoe Creek,wetland,WetCntPartial,0
 9406002,choptank,Upper Choptank River,wetland,iwi_old,0.276665978
 9406002,choptank,Upper Choptank River,wetland,whyd_old,0.773767678
 9406002,choptank,Upper Choptank River,wetland,wchem_old,0.830069058
@@ -17411,7 +17411,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,iwi,0.582042123239003
 9405996,choptank,Tuckahoe Creek,wetland,iwi,0.449802733862032
 9405998,choptank,Upper Choptank River,wetland,iwi,0.63919830202507
-9406000,choptank,Tuckahoe Creek,wetland,iwi,0.432542467609894
+9406e3,choptank,Tuckahoe Creek,wetland,iwi,0.432542467609894
 9406002,choptank,Upper Choptank River,wetland,iwi,0.544362846974149
 9406004,choptank,Upper Choptank River,wetland,iwi,0.538185588019106
 9406006,choptank,Upper Choptank River,wetland,iwi,0.650416672061005
@@ -18232,7 +18232,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,ici,0.426388598237953
 9405996,choptank,Tuckahoe Creek,wetland,ici,0.458220576382573
 9405998,choptank,Upper Choptank River,wetland,ici,0.646714618571533
-9406000,choptank,Tuckahoe Creek,wetland,ici,0.441597141372953
+9406e3,choptank,Tuckahoe Creek,wetland,ici,0.441597141372953
 9406002,choptank,Upper Choptank River,wetland,ici,0.553269370770271
 9406004,choptank,Upper Choptank River,wetland,ici,0.586763543565298
 9406006,choptank,Upper Choptank River,wetland,ici,0.637956902422755
@@ -19053,7 +19053,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,whyd,0.91053177609195
 9405996,choptank,Tuckahoe Creek,wetland,whyd,0.864476264997391
 9405998,choptank,Upper Choptank River,wetland,whyd,0.92836346798534
-9406000,choptank,Tuckahoe Creek,wetland,whyd,0.859247909242385
+9406e3,choptank,Tuckahoe Creek,wetland,whyd,0.859247909242385
 9406002,choptank,Upper Choptank River,wetland,whyd,0.892352226720647
 9406004,choptank,Upper Choptank River,wetland,whyd,0.888721839891771
 9406006,choptank,Upper Choptank River,wetland,whyd,0.924016597116281
@@ -19874,7 +19874,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,chyd,0.861311534315487
 9405996,choptank,Tuckahoe Creek,wetland,chyd,0.864476264997392
 9405998,choptank,Upper Choptank River,wetland,chyd,0.928363467985339
-9406000,choptank,Tuckahoe Creek,wetland,chyd,0.859247909242384
+9406e3,choptank,Tuckahoe Creek,wetland,chyd,0.859247909242384
 9406002,choptank,Upper Choptank River,wetland,chyd,0.892352226720648
 9406004,choptank,Upper Choptank River,wetland,chyd,0.902504456327986
 9406006,choptank,Upper Choptank River,wetland,chyd,0.918568720017001
@@ -20695,7 +20695,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,wchem,0.895133336997999
 9405996,choptank,Tuckahoe Creek,wetland,wchem,0.866893344579261
 9405998,choptank,Upper Choptank River,wetland,wchem,0.907882922485283
-9406000,choptank,Tuckahoe Creek,wetland,wchem,0.863337854555893
+9406e3,choptank,Tuckahoe Creek,wetland,wchem,0.863337854555893
 9406002,choptank,Upper Choptank River,wetland,wchem,0.889361331984619
 9406004,choptank,Upper Choptank River,wetland,wchem,0.88710771851028
 9406006,choptank,Upper Choptank River,wetland,wchem,0.909344686501815
@@ -21516,7 +21516,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,cchem,0.870439306623039
 9405996,choptank,Tuckahoe Creek,wetland,cchem,0.876451855803763
 9405998,choptank,Upper Choptank River,wetland,cchem,0.91165948971239
-9406000,choptank,Tuckahoe Creek,wetland,cchem,0.873163826172373
+9406e3,choptank,Tuckahoe Creek,wetland,cchem,0.873163826172373
 9406002,choptank,Upper Choptank River,wetland,cchem,0.895751843637548
 9406004,choptank,Upper Choptank River,wetland,cchem,0.901506448806225
 9406006,choptank,Upper Choptank River,wetland,cchem,0.916284100532261
@@ -22337,7 +22337,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,wsed,0.932343122773063
 9405996,choptank,Tuckahoe Creek,wetland,wsed,0.915921389368329
 9405998,choptank,Upper Choptank River,wetland,wsed,0.956122580660608
-9406000,choptank,Tuckahoe Creek,wetland,wsed,0.897428780201969
+9406e3,choptank,Tuckahoe Creek,wetland,wsed,0.897428780201969
 9406002,choptank,Upper Choptank River,wetland,wsed,0.949203892282894
 9406004,choptank,Upper Choptank River,wetland,wsed,0.950363357965107
 9406006,choptank,Upper Choptank River,wetland,wsed,0.959743237189925
@@ -23158,7 +23158,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,csed,0.900282448888193
 9405996,choptank,Tuckahoe Creek,wetland,csed,0.9187897210488
 9405998,choptank,Upper Choptank River,wetland,csed,0.958507324466384
-9406000,choptank,Tuckahoe Creek,wetland,csed,0.900902035200802
+9406e3,choptank,Tuckahoe Creek,wetland,csed,0.900902035200802
 9406002,choptank,Upper Choptank River,wetland,csed,0.951053120879059
 9406004,choptank,Upper Choptank River,wetland,csed,0.959431036976843
 9406006,choptank,Upper Choptank River,wetland,csed,0.963911618384222
@@ -23979,7 +23979,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,wconn,0.935442119839063
 9405996,choptank,Tuckahoe Creek,wetland,wconn,0.87632329304851
 9405998,choptank,Upper Choptank River,wetland,wconn,0.941715476136835
-9406000,choptank,Tuckahoe Creek,wetland,wconn,0.884252374653917
+9406e3,choptank,Tuckahoe Creek,wetland,wconn,0.884252374653917
 9406002,choptank,Upper Choptank River,wetland,wconn,0.911230528970835
 9406004,choptank,Upper Choptank River,wetland,wconn,0.90568336248679
 9406006,choptank,Upper Choptank River,wetland,wconn,0.952541468327943
@@ -24800,7 +24800,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,cconn,0.875274834070353
 9405996,choptank,Tuckahoe Creek,wetland,cconn,0.876460082007979
 9405998,choptank,Upper Choptank River,wetland,cconn,0.94183137115013
-9406000,choptank,Tuckahoe Creek,wetland,cconn,0.884323741313559
+9406e3,choptank,Tuckahoe Creek,wetland,cconn,0.884323741313559
 9406002,choptank,Upper Choptank River,wetland,cconn,0.911436036997268
 9406004,choptank,Upper Choptank River,wetland,cconn,0.914225443231347
 9406006,choptank,Upper Choptank River,wetland,cconn,0.919757587523931
@@ -25621,7 +25621,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,wtemp,0.900232881821591
 9405996,choptank,Tuckahoe Creek,wetland,wtemp,0.861028097519125
 9405998,choptank,Upper Choptank River,wetland,wtemp,0.91784263502232
-9406000,choptank,Tuckahoe Creek,wetland,wtemp,0.855016622419937
+9406e3,choptank,Tuckahoe Creek,wetland,wtemp,0.855016622419937
 9406002,choptank,Upper Choptank River,wetland,wtemp,0.88920093526423
 9406004,choptank,Upper Choptank River,wetland,wtemp,0.886642675562413
 9406006,choptank,Upper Choptank River,wetland,wtemp,0.921019196736651
@@ -26442,7 +26442,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,ctemp,0.835978360681918
 9405996,choptank,Tuckahoe Creek,wetland,ctemp,0.861028097519125
 9405998,choptank,Upper Choptank River,wetland,ctemp,0.91784263502232
-9406000,choptank,Tuckahoe Creek,wetland,ctemp,0.855016622419937
+9406e3,choptank,Tuckahoe Creek,wetland,ctemp,0.855016622419937
 9406002,choptank,Upper Choptank River,wetland,ctemp,0.88920093526423
 9406004,choptank,Upper Choptank River,wetland,ctemp,0.900074272133096
 9406006,choptank,Upper Choptank River,wetland,ctemp,0.920887606042402
@@ -27263,7 +27263,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,whabt,0.909544629093659
 9405996,choptank,Tuckahoe Creek,wetland,whabt,0.868487291061505
 9405998,choptank,Upper Choptank River,wetland,whabt,0.917669322119102
-9406000,choptank,Tuckahoe Creek,wetland,whabt,0.859367054029187
+9406e3,choptank,Tuckahoe Creek,wetland,whabt,0.859367054029187
 9406002,choptank,Upper Choptank River,wetland,whabt,0.891838546512892
 9406004,choptank,Upper Choptank River,wetland,whabt,0.894489298129289
 9406006,choptank,Upper Choptank River,wetland,whabt,0.919339086904295
@@ -28084,7 +28084,7 @@ comid,watershed,site,waterbody_type,variable,value
 9405994,choptank,Tuckahoe Creek,wetland,chabt,0.863353321699261
 9405996,choptank,Tuckahoe Creek,wetland,chabt,0.872223644925122
 9405998,choptank,Upper Choptank River,wetland,chabt,0.922200096590709
-9406000,choptank,Tuckahoe Creek,wetland,chabt,0.864069396184828
+9406e3,choptank,Tuckahoe Creek,wetland,chabt,0.864069396184828
 9406002,choptank,Upper Choptank River,wetland,chabt,0.898011139287859
 9406004,choptank,Upper Choptank River,wetland,chabt,0.913480991905074
 9406006,choptank,Upper Choptank River,wetland,chabt,0.928393979484096
@@ -28694,3 +28694,419 @@ comid,watershed,site,waterbody_type,variable,value
 166174965,narragansett bay,Larkin,lake,chabt,0.947407923218376
 932060026,choptank,Tuckahoe Creek,wetland,chabt,0.877737180711985
 932060027,choptank,Tuckahoe Creek,wetland,chabt,0.847970438550232
+6129179,narragansett bay,87E5,stream,iwi,0.586988646
+6129659,narragansett bay,88E2,stream,iwi,0.55136493
+6129627,narragansett bay,90E2,stream,iwi,0.578864099
+6128195,narragansett bay,91E2,stream,iwi,0.658600607
+6128197,narragansett bay,91E3,stream,iwi,0.580367713
+6123637,narragansett bay,94E1,stream,iwi,0.598004254
+6123981,narragansett bay,94E5,stream,iwi,0.654935566
+6115838,narragansett bay,95E3,stream,iwi,0.592081348
+6129179,narragansett bay,87E5,stream,ici,0.64662452
+6129659,narragansett bay,88E2,stream,ici,0.579626513
+6129627,narragansett bay,90E2,stream,ici,0.607657776
+6128195,narragansett bay,91E2,stream,ici,0.700094653
+6128197,narragansett bay,91E3,stream,ici,0.685278842
+6123637,narragansett bay,94E1,stream,ici,0.509622542
+6123981,narragansett bay,94E5,stream,ici,0.796044757
+6115838,narragansett bay,95E3,stream,ici,0.50832208
+6129179,narragansett bay,87E5,stream,whyd,0.948958493
+6129659,narragansett bay,88E2,stream,whyd,0.947627715
+6129627,narragansett bay,90E2,stream,whyd,0.952091064
+6128195,narragansett bay,91E2,stream,whyd,0.957613234
+6128197,narragansett bay,91E3,stream,whyd,0.953145197
+6123637,narragansett bay,94E1,stream,whyd,0.959927118
+6123981,narragansett bay,94E5,stream,whyd,0.957136109
+6115838,narragansett bay,95E3,stream,whyd,0.944841967
+6129179,narragansett bay,87E5,stream,chyd,0.973748346
+6129659,narragansett bay,88E2,stream,chyd,0.947627715
+6129627,narragansett bay,90E2,stream,chyd,0.952091064
+6128195,narragansett bay,91E2,stream,chyd,0.957217487
+6128197,narragansett bay,91E3,stream,chyd,0.960629567
+6123637,narragansett bay,94E1,stream,chyd,0.941
+6123981,narragansett bay,94E5,stream,chyd,0.980494166
+6115838,narragansett bay,95E3,stream,chyd,0.931295817
+6129179,narragansett bay,87E5,stream,wchem,0.894110779
+6129659,narragansett bay,88E2,stream,wchem,0.878634321
+6129627,narragansett bay,90E2,stream,wchem,0.893423334
+6128195,narragansett bay,91E2,stream,wchem,0.845713975
+6128197,narragansett bay,91E3,stream,wchem,0.863054837
+6123637,narragansett bay,94E1,stream,wchem,0.903683547
+6123981,narragansett bay,94E5,stream,wchem,0.902931466
+6115838,narragansett bay,95E3,stream,wchem,0.884061785
+6129179,narragansett bay,87E5,stream,cchem,0.900596647
+6129659,narragansett bay,88E2,stream,cchem,0.890331448
+6129627,narragansett bay,90E2,stream,cchem,0.893359284
+6128195,narragansett bay,91E2,stream,cchem,0.884209271
+6128197,narragansett bay,91E3,stream,cchem,0.890760912
+6123637,narragansett bay,94E1,stream,cchem,0.886418569
+6123981,narragansett bay,94E5,stream,cchem,0.928772138
+6115838,narragansett bay,95E3,stream,cchem,0.873973762
+6129179,narragansett bay,87E5,stream,wsed,0.945945355
+6129659,narragansett bay,88E2,stream,wsed,0.936013363
+6129627,narragansett bay,90E2,stream,wsed,0.936849614
+6128195,narragansett bay,91E2,stream,wsed,0.951242553
+6128197,narragansett bay,91E3,stream,wsed,0.940526425
+6123637,narragansett bay,94E1,stream,wsed,0.954480938
+6123981,narragansett bay,94E5,stream,wsed,0.952553359
+6115838,narragansett bay,95E3,stream,wsed,0.935323462
+6129179,narragansett bay,87E5,stream,csed,0.961615594
+6129659,narragansett bay,88E2,stream,csed,0.943169658
+6129627,narragansett bay,90E2,stream,csed,0.943938005
+6128195,narragansett bay,91E2,stream,csed,0.956545272
+6128197,narragansett bay,91E3,stream,csed,0.962541195
+6123637,narragansett bay,94E1,stream,csed,0.923781113
+6123981,narragansett bay,94E5,stream,csed,0.97793799
+6115838,narragansett bay,95E3,stream,csed,0.9431701
+6129179,narragansett bay,87E5,stream,wconn,0.908888811
+6129659,narragansett bay,88E2,stream,wconn,0.915031813
+6129627,narragansett bay,90E2,stream,wconn,0.912067441
+6128195,narragansett bay,91E2,stream,wconn,0.970990626
+6128197,narragansett bay,91E3,stream,wconn,0.926350129
+6123637,narragansett bay,94E1,stream,wconn,0.914753712
+6123981,narragansett bay,94E5,stream,wconn,0.942407598
+6115838,narragansett bay,95E3,stream,wconn,0.932718654
+6129179,narragansett bay,87E5,stream,cconn,0.917638238
+6129659,narragansett bay,88E2,stream,cconn,0.915412421
+6129627,narragansett bay,90E2,stream,cconn,0.921693475
+6128195,narragansett bay,91E2,stream,cconn,0.969845113
+6128197,narragansett bay,91E3,stream,cconn,0.950330279
+6123637,narragansett bay,94E1,stream,cconn,0.88735056
+6123981,narragansett bay,94E5,stream,cconn,0.965817081
+6115838,narragansett bay,95E3,stream,cconn,0.889996027
+6129179,narragansett bay,87E5,stream,wtemp,0.882477823
+6129659,narragansett bay,88E2,stream,wtemp,0.886234659
+6129627,narragansett bay,90E2,stream,wtemp,0.897510981
+6128195,narragansett bay,91E2,stream,wtemp,0.960032283
+6128197,narragansett bay,91E3,stream,wtemp,0.901866056
+6123637,narragansett bay,94E1,stream,wtemp,0.88826266
+6123981,narragansett bay,94E5,stream,wtemp,0.927587809
+6115838,narragansett bay,95E3,stream,wtemp,0.909174566
+6129179,narragansett bay,87E5,stream,ctemp,0.891208264
+6129659,narragansett bay,88E2,stream,ctemp,0.886234659
+6129627,narragansett bay,90E2,stream,ctemp,0.897510981
+6128195,narragansett bay,91E2,stream,ctemp,0.958411028
+6128197,narragansett bay,91E3,stream,ctemp,0.937683346
+6123637,narragansett bay,94E1,stream,ctemp,0.850378788
+6123981,narragansett bay,94E5,stream,ctemp,0.958679313
+6115838,narragansett bay,95E3,stream,ctemp,0.851770917
+6129179,narragansett bay,87E5,stream,whabt,0.911823009
+6129659,narragansett bay,88E2,stream,whabt,0.872421278
+6129627,narragansett bay,90E2,stream,whabt,0.887368955
+6128195,narragansett bay,91E2,stream,whabt,0.917099245
+6128197,narragansett bay,91E3,stream,whabt,0.897878515
+6123637,narragansett bay,94E1,stream,whabt,0.888867017
+6123981,narragansett bay,94E5,stream,whabt,0.91009549
+6115838,narragansett bay,95E3,stream,whabt,0.893675431
+6129179,narragansett bay,87E5,stream,chabt,0.937611458
+6129659,narragansett bay,88E2,stream,chabt,0.897849248
+6129627,narragansett bay,90E2,stream,chabt,0.914923241
+6128195,narragansett bay,91E2,stream,chabt,0.930317861
+6128197,narragansett bay,91E3,stream,chabt,0.933684453
+6123637,narragansett bay,94E1,stream,chabt,0.876482878
+6123981,narragansett bay,94E5,stream,chabt,0.965392094
+6115838,narragansett bay,95E3,stream,chabt,0.873478113
+6129179,narragansett bay,87E5,stream,pN15,9.098158582
+6129659,narragansett bay,88E2,stream,pN15,8.259766595
+6129627,narragansett bay,90E2,stream,pN15,6.452268156
+6128195,narragansett bay,91E2,stream,pN15,7.604743954
+6128197,narragansett bay,91E3,stream,pN15,NA
+6123637,narragansett bay,94E1,stream,pN15,7.675770401
+6123981,narragansett bay,94E5,stream,pN15,10.51307978
+6115838,narragansett bay,95E3,stream,pN15,16.61179339
+6129179,narragansett bay,87E5,stream,log10tn,2.876702109
+6129659,narragansett bay,88E2,stream,log10tn,3.2509077
+6129627,narragansett bay,90E2,stream,log10tn,3.626032248
+6128195,narragansett bay,91E2,stream,log10tn,2.993700254
+6128197,narragansett bay,91E3,stream,log10tn,3.382017043
+6123637,narragansett bay,94E1,stream,log10tn,3.041392685
+6123981,narragansett bay,94E5,stream,log10tn,2.8310644
+6115838,narragansett bay,95E3,stream,log10tn,3.470116353
+6129179,narragansett bay,87E5,stream,log10no3,2.450132049
+6129659,narragansett bay,88E2,stream,log10no3,3.223236273
+6129627,narragansett bay,90E2,stream,log10no3,3.726512861
+6128195,narragansett bay,91E2,stream,log10no3,2.574804203
+6128197,narragansett bay,91E3,stream,log10no3,3.301029996
+6123637,narragansett bay,94E1,stream,log10no3,2.737856304
+6123981,narragansett bay,94E5,stream,log10no3,2.116076172
+6115838,narragansett bay,95E3,stream,log10no3,3.457567033
+6129179,narragansett bay,87E5,stream,log10nh4,2.126157393
+6129659,narragansett bay,88E2,stream,log10nh4,1.317185508
+6129627,narragansett bay,90E2,stream,log10nh4,0.962984584
+6128195,narragansett bay,91E2,stream,log10nh4,2.486366712
+6128197,narragansett bay,91E3,stream,log10nh4,1.939349495
+6123637,narragansett bay,94E1,stream,log10nh4,1.26630227
+6123981,narragansett bay,94E5,stream,log10nh4,1.259593879
+6115838,narragansett bay,95E3,stream,log10nh4,2.117297817
+6129179,narragansett bay,87E5,stream,log10chloride,1.961788993
+6129659,narragansett bay,88E2,stream,log10chloride,1.970250356
+6129627,narragansett bay,90E2,stream,log10chloride,1.672226972
+6128195,narragansett bay,91E2,stream,log10chloride,2.057965551
+6128197,narragansett bay,91E3,stream,log10chloride,2.080896263
+6123637,narragansett bay,94E1,stream,log10chloride,1.978062043
+6123981,narragansett bay,94E5,stream,log10chloride,1.904537727
+6115838,narragansett bay,95E3,stream,log10chloride,2.081387149
+6129179,narragansett bay,87E5,stream,forspct,30.926
+6129659,narragansett bay,88E2,stream,forspct,21.604
+6129627,narragansett bay,90E2,stream,forspct,30.638
+6128195,narragansett bay,91E2,stream,forspct,32.14
+6128197,narragansett bay,91E3,stream,forspct,30.056
+6123637,narragansett bay,94E1,stream,forspct,24.63
+6123981,narragansett bay,94E5,stream,forspct,24.589
+6115838,narragansett bay,95E3,stream,forspct,41.513
+6129179,narragansett bay,87E5,stream,agpct,1.063
+6129659,narragansett bay,88E2,stream,agpct,3.622
+6129627,narragansett bay,90E2,stream,agpct,4.391
+6128195,narragansett bay,91E2,stream,agpct,2.637
+6128197,narragansett bay,91E3,stream,agpct,4.4
+6123637,narragansett bay,94E1,stream,agpct,1.922
+6123981,narragansett bay,94E5,stream,agpct,4.129
+6115838,narragansett bay,95E3,stream,agpct,4.777
+6129179,narragansett bay,87E5,stream,devpct,59.349
+6129659,narragansett bay,88E2,stream,devpct,62.509
+6129627,narragansett bay,90E2,stream,devpct,61.837
+6128195,narragansett bay,91E2,stream,devpct,49.015
+6128197,narragansett bay,91E3,stream,devpct,49.575
+6123637,narragansett bay,94E1,stream,devpct,59.743
+6123981,narragansett bay,94E5,stream,devpct,52.22
+6115838,narragansett bay,95E3,stream,devpct,44.129
+6129179,narragansett bay,87E5,stream,pcticnlcd,20.7839051
+6129659,narragansett bay,88E2,stream,pcticnlcd,32.11869878
+6129627,narragansett bay,90E2,stream,pcticnlcd,26.17232376
+6128195,narragansett bay,91E2,stream,pcticnlcd,13.29108486
+6128197,narragansett bay,91E3,stream,pcticnlcd,24.75732076
+6123637,narragansett bay,94E1,stream,pcticnlcd,22.79188215
+6123981,narragansett bay,94E5,stream,pcticnlcd,20.89700862
+6115838,narragansett bay,95E3,stream,pcticnlcd,20.78845475
+6129179,narragansett bay,87E5,stream,pcticstate,20.74814269
+6129659,narragansett bay,88E2,stream,pcticstate,25.21213692
+6129627,narragansett bay,90E2,stream,pcticstate,19.99013707
+6128195,narragansett bay,91E2,stream,pcticstate,18.13238075
+6128197,narragansett bay,91E3,stream,pcticstate,22.84550871
+6123637,narragansett bay,94E1,stream,pcticstate,19.20257188
+6123981,narragansett bay,94E5,stream,pcticstate,18.45633444
+6115838,narragansett bay,95E3,stream,pcticstate,20.41127011
+6129179,narragansett bay,87E5,stream,logwspop2010,969
+6129659,narragansett bay,88E2,stream,logwspop2010,3730
+6129627,narragansett bay,90E2,stream,logwspop2010,694
+6128195,narragansett bay,91E2,stream,logwspop2010,406
+6128197,narragansett bay,91E3,stream,logwspop2010,48005
+6123637,narragansett bay,94E1,stream,logwspop2010,4504
+6123981,narragansett bay,94E5,stream,logwspop2010,18901
+6115838,narragansett bay,95E3,stream,logwspop2010,171348
+6129179,narragansett bay,87E5,stream,logwspopdens2010,345.1529127
+6129659,narragansett bay,88E2,stream,logwspopdens2010,1028.909799
+6129627,narragansett bay,90E2,stream,logwspopdens2010,670.2886932
+6128195,narragansett bay,91E2,stream,logwspopdens2010,483.753162
+6128197,narragansett bay,91E3,stream,logwspopdens2010,752.9722917
+6123637,narragansett bay,94E1,stream,logwspopdens2010,783.7866151
+6123981,narragansett bay,94E5,stream,logwspopdens2010,710.0554727
+6115838,narragansett bay,95E3,stream,logwspopdens2010,850.9037828
+6129179,narragansett bay,87E5,stream,iwi,0.586988646
+6129659,narragansett bay,88E2,stream,iwi,0.55136493
+6129627,narragansett bay,90E2,stream,iwi,0.578864099
+6128195,narragansett bay,91E2,stream,iwi,0.658600607
+6128197,narragansett bay,91E3,stream,iwi,0.580367713
+6123637,narragansett bay,94E1,stream,iwi,0.598004254
+6123981,narragansett bay,94E5,stream,iwi,0.654935566
+6115838,narragansett bay,95E3,stream,iwi,0.592081348
+6129179,narragansett bay,87E5,stream,ici,0.64662452
+6129659,narragansett bay,88E2,stream,ici,0.579626513
+6129627,narragansett bay,90E2,stream,ici,0.607657776
+6128195,narragansett bay,91E2,stream,ici,0.700094653
+6128197,narragansett bay,91E3,stream,ici,0.685278842
+6123637,narragansett bay,94E1,stream,ici,0.509622542
+6123981,narragansett bay,94E5,stream,ici,0.796044757
+6115838,narragansett bay,95E3,stream,ici,0.50832208
+6129179,narragansett bay,87E5,stream,whyd,0.948958493
+6129659,narragansett bay,88E2,stream,whyd,0.947627715
+6129627,narragansett bay,90E2,stream,whyd,0.952091064
+6128195,narragansett bay,91E2,stream,whyd,0.957613234
+6128197,narragansett bay,91E3,stream,whyd,0.953145197
+6123637,narragansett bay,94E1,stream,whyd,0.959927118
+6123981,narragansett bay,94E5,stream,whyd,0.957136109
+6115838,narragansett bay,95E3,stream,whyd,0.944841967
+6129179,narragansett bay,87E5,stream,chyd,0.973748346
+6129659,narragansett bay,88E2,stream,chyd,0.947627715
+6129627,narragansett bay,90E2,stream,chyd,0.952091064
+6128195,narragansett bay,91E2,stream,chyd,0.957217487
+6128197,narragansett bay,91E3,stream,chyd,0.960629567
+6123637,narragansett bay,94E1,stream,chyd,0.941
+6123981,narragansett bay,94E5,stream,chyd,0.980494166
+6115838,narragansett bay,95E3,stream,chyd,0.931295817
+6129179,narragansett bay,87E5,stream,wchem,0.894110779
+6129659,narragansett bay,88E2,stream,wchem,0.878634321
+6129627,narragansett bay,90E2,stream,wchem,0.893423334
+6128195,narragansett bay,91E2,stream,wchem,0.845713975
+6128197,narragansett bay,91E3,stream,wchem,0.863054837
+6123637,narragansett bay,94E1,stream,wchem,0.903683547
+6123981,narragansett bay,94E5,stream,wchem,0.902931466
+6115838,narragansett bay,95E3,stream,wchem,0.884061785
+6129179,narragansett bay,87E5,stream,cchem,0.900596647
+6129659,narragansett bay,88E2,stream,cchem,0.890331448
+6129627,narragansett bay,90E2,stream,cchem,0.893359284
+6128195,narragansett bay,91E2,stream,cchem,0.884209271
+6128197,narragansett bay,91E3,stream,cchem,0.890760912
+6123637,narragansett bay,94E1,stream,cchem,0.886418569
+6123981,narragansett bay,94E5,stream,cchem,0.928772138
+6115838,narragansett bay,95E3,stream,cchem,0.873973762
+6129179,narragansett bay,87E5,stream,wsed,0.945945355
+6129659,narragansett bay,88E2,stream,wsed,0.936013363
+6129627,narragansett bay,90E2,stream,wsed,0.936849614
+6128195,narragansett bay,91E2,stream,wsed,0.951242553
+6128197,narragansett bay,91E3,stream,wsed,0.940526425
+6123637,narragansett bay,94E1,stream,wsed,0.954480938
+6123981,narragansett bay,94E5,stream,wsed,0.952553359
+6115838,narragansett bay,95E3,stream,wsed,0.935323462
+6129179,narragansett bay,87E5,stream,csed,0.961615594
+6129659,narragansett bay,88E2,stream,csed,0.943169658
+6129627,narragansett bay,90E2,stream,csed,0.943938005
+6128195,narragansett bay,91E2,stream,csed,0.956545272
+6128197,narragansett bay,91E3,stream,csed,0.962541195
+6123637,narragansett bay,94E1,stream,csed,0.923781113
+6123981,narragansett bay,94E5,stream,csed,0.97793799
+6115838,narragansett bay,95E3,stream,csed,0.9431701
+6129179,narragansett bay,87E5,stream,wconn,0.908888811
+6129659,narragansett bay,88E2,stream,wconn,0.915031813
+6129627,narragansett bay,90E2,stream,wconn,0.912067441
+6128195,narragansett bay,91E2,stream,wconn,0.970990626
+6128197,narragansett bay,91E3,stream,wconn,0.926350129
+6123637,narragansett bay,94E1,stream,wconn,0.914753712
+6123981,narragansett bay,94E5,stream,wconn,0.942407598
+6115838,narragansett bay,95E3,stream,wconn,0.932718654
+6129179,narragansett bay,87E5,stream,cconn,0.917638238
+6129659,narragansett bay,88E2,stream,cconn,0.915412421
+6129627,narragansett bay,90E2,stream,cconn,0.921693475
+6128195,narragansett bay,91E2,stream,cconn,0.969845113
+6128197,narragansett bay,91E3,stream,cconn,0.950330279
+6123637,narragansett bay,94E1,stream,cconn,0.88735056
+6123981,narragansett bay,94E5,stream,cconn,0.965817081
+6115838,narragansett bay,95E3,stream,cconn,0.889996027
+6129179,narragansett bay,87E5,stream,wtemp,0.882477823
+6129659,narragansett bay,88E2,stream,wtemp,0.886234659
+6129627,narragansett bay,90E2,stream,wtemp,0.897510981
+6128195,narragansett bay,91E2,stream,wtemp,0.960032283
+6128197,narragansett bay,91E3,stream,wtemp,0.901866056
+6123637,narragansett bay,94E1,stream,wtemp,0.88826266
+6123981,narragansett bay,94E5,stream,wtemp,0.927587809
+6115838,narragansett bay,95E3,stream,wtemp,0.909174566
+6129179,narragansett bay,87E5,stream,ctemp,0.891208264
+6129659,narragansett bay,88E2,stream,ctemp,0.886234659
+6129627,narragansett bay,90E2,stream,ctemp,0.897510981
+6128195,narragansett bay,91E2,stream,ctemp,0.958411028
+6128197,narragansett bay,91E3,stream,ctemp,0.937683346
+6123637,narragansett bay,94E1,stream,ctemp,0.850378788
+6123981,narragansett bay,94E5,stream,ctemp,0.958679313
+6115838,narragansett bay,95E3,stream,ctemp,0.851770917
+6129179,narragansett bay,87E5,stream,whabt,0.911823009
+6129659,narragansett bay,88E2,stream,whabt,0.872421278
+6129627,narragansett bay,90E2,stream,whabt,0.887368955
+6128195,narragansett bay,91E2,stream,whabt,0.917099245
+6128197,narragansett bay,91E3,stream,whabt,0.897878515
+6123637,narragansett bay,94E1,stream,whabt,0.888867017
+6123981,narragansett bay,94E5,stream,whabt,0.91009549
+6115838,narragansett bay,95E3,stream,whabt,0.893675431
+6129179,narragansett bay,87E5,stream,chabt,0.937611458
+6129659,narragansett bay,88E2,stream,chabt,0.897849248
+6129627,narragansett bay,90E2,stream,chabt,0.914923241
+6128195,narragansett bay,91E2,stream,chabt,0.930317861
+6128197,narragansett bay,91E3,stream,chabt,0.933684453
+6123637,narragansett bay,94E1,stream,chabt,0.876482878
+6123981,narragansett bay,94E5,stream,chabt,0.965392094
+6115838,narragansett bay,95E3,stream,chabt,0.873478113
+6129179,narragansett bay,87E5,stream,pN15,9.098158582
+6129659,narragansett bay,88E2,stream,pN15,8.259766595
+6129627,narragansett bay,90E2,stream,pN15,6.452268156
+6128195,narragansett bay,91E2,stream,pN15,7.604743954
+6128197,narragansett bay,91E3,stream,pN15,NA
+6123637,narragansett bay,94E1,stream,pN15,7.675770401
+6123981,narragansett bay,94E5,stream,pN15,10.51307978
+6115838,narragansett bay,95E3,stream,pN15,16.61179339
+6129179,narragansett bay,87E5,stream,log10tn,2.876702109
+6129659,narragansett bay,88E2,stream,log10tn,3.2509077
+6129627,narragansett bay,90E2,stream,log10tn,3.626032248
+6128195,narragansett bay,91E2,stream,log10tn,2.993700254
+6128197,narragansett bay,91E3,stream,log10tn,3.382017043
+6123637,narragansett bay,94E1,stream,log10tn,3.041392685
+6123981,narragansett bay,94E5,stream,log10tn,2.8310644
+6115838,narragansett bay,95E3,stream,log10tn,3.470116353
+6129179,narragansett bay,87E5,stream,log10no3,2.450132049
+6129659,narragansett bay,88E2,stream,log10no3,3.223236273
+6129627,narragansett bay,90E2,stream,log10no3,3.726512861
+6128195,narragansett bay,91E2,stream,log10no3,2.574804203
+6128197,narragansett bay,91E3,stream,log10no3,3.301029996
+6123637,narragansett bay,94E1,stream,log10no3,2.737856304
+6123981,narragansett bay,94E5,stream,log10no3,2.116076172
+6115838,narragansett bay,95E3,stream,log10no3,3.457567033
+6129179,narragansett bay,87E5,stream,log10nh4,2.126157393
+6129659,narragansett bay,88E2,stream,log10nh4,1.317185508
+6129627,narragansett bay,90E2,stream,log10nh4,0.962984584
+6128195,narragansett bay,91E2,stream,log10nh4,2.486366712
+6128197,narragansett bay,91E3,stream,log10nh4,1.939349495
+6123637,narragansett bay,94E1,stream,log10nh4,1.26630227
+6123981,narragansett bay,94E5,stream,log10nh4,1.259593879
+6115838,narragansett bay,95E3,stream,log10nh4,2.117297817
+6129179,narragansett bay,87E5,stream,log10chloride,1.961788993
+6129659,narragansett bay,88E2,stream,log10chloride,1.970250356
+6129627,narragansett bay,90E2,stream,log10chloride,1.672226972
+6128195,narragansett bay,91E2,stream,log10chloride,2.057965551
+6128197,narragansett bay,91E3,stream,log10chloride,2.080896263
+6123637,narragansett bay,94E1,stream,log10chloride,1.978062043
+6123981,narragansett bay,94E5,stream,log10chloride,1.904537727
+6115838,narragansett bay,95E3,stream,log10chloride,2.081387149
+6129179,narragansett bay,87E5,stream,forspct,30.926
+6129659,narragansett bay,88E2,stream,forspct,21.604
+6129627,narragansett bay,90E2,stream,forspct,30.638
+6128195,narragansett bay,91E2,stream,forspct,32.14
+6128197,narragansett bay,91E3,stream,forspct,30.056
+6123637,narragansett bay,94E1,stream,forspct,24.63
+6123981,narragansett bay,94E5,stream,forspct,24.589
+6115838,narragansett bay,95E3,stream,forspct,41.513
+6129179,narragansett bay,87E5,stream,agpct,1.063
+6129659,narragansett bay,88E2,stream,agpct,3.622
+6129627,narragansett bay,90E2,stream,agpct,4.391
+6128195,narragansett bay,91E2,stream,agpct,2.637
+6128197,narragansett bay,91E3,stream,agpct,4.4
+6123637,narragansett bay,94E1,stream,agpct,1.922
+6123981,narragansett bay,94E5,stream,agpct,4.129
+6115838,narragansett bay,95E3,stream,agpct,4.777
+6129179,narragansett bay,87E5,stream,devpct,59.349
+6129659,narragansett bay,88E2,stream,devpct,62.509
+6129627,narragansett bay,90E2,stream,devpct,61.837
+6128195,narragansett bay,91E2,stream,devpct,49.015
+6128197,narragansett bay,91E3,stream,devpct,49.575
+6123637,narragansett bay,94E1,stream,devpct,59.743
+6123981,narragansett bay,94E5,stream,devpct,52.22
+6115838,narragansett bay,95E3,stream,devpct,44.129
+6129179,narragansett bay,87E5,stream,pcticnlcd,20.7839051
+6129659,narragansett bay,88E2,stream,pcticnlcd,32.11869878
+6129627,narragansett bay,90E2,stream,pcticnlcd,26.17232376
+6128195,narragansett bay,91E2,stream,pcticnlcd,13.29108486
+6128197,narragansett bay,91E3,stream,pcticnlcd,24.75732076
+6123637,narragansett bay,94E1,stream,pcticnlcd,22.79188215
+6123981,narragansett bay,94E5,stream,pcticnlcd,20.89700862
+6115838,narragansett bay,95E3,stream,pcticnlcd,20.78845475
+6129179,narragansett bay,87E5,stream,pcticstate,20.74814269
+6129659,narragansett bay,88E2,stream,pcticstate,25.21213692
+6129627,narragansett bay,90E2,stream,pcticstate,19.99013707
+6128195,narragansett bay,91E2,stream,pcticstate,18.13238075
+6128197,narragansett bay,91E3,stream,pcticstate,22.84550871
+6123637,narragansett bay,94E1,stream,pcticstate,19.20257188
+6123981,narragansett bay,94E5,stream,pcticstate,18.45633444
+6115838,narragansett bay,95E3,stream,pcticstate,20.41127011
+6129179,narragansett bay,87E5,stream,logwspop2010,969
+6129659,narragansett bay,88E2,stream,logwspop2010,3730
+6129627,narragansett bay,90E2,stream,logwspop2010,694
+6128195,narragansett bay,91E2,stream,logwspop2010,406
+6128197,narragansett bay,91E3,stream,logwspop2010,48005
+6123637,narragansett bay,94E1,stream,logwspop2010,4504
+6123981,narragansett bay,94E5,stream,logwspop2010,18901
+6115838,narragansett bay,95E3,stream,logwspop2010,171348
+6129179,narragansett bay,87E5,stream,logwspopdens2010,345.1529127
+6129659,narragansett bay,88E2,stream,logwspopdens2010,1028.909799
+6129627,narragansett bay,90E2,stream,logwspopdens2010,670.2886932
+6128195,narragansett bay,91E2,stream,logwspopdens2010,483.753162
+6128197,narragansett bay,91E3,stream,logwspopdens2010,752.9722917
+6123637,narragansett bay,94E1,stream,logwspopdens2010,783.7866151
+6123981,narragansett bay,94E5,stream,logwspopdens2010,710.0554727
+6115838,narragansett bay,95E3,stream,logwspopdens2010,850.9037828
