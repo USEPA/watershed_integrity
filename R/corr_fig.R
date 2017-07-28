@@ -43,9 +43,8 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = abs(value), color = value)) + 
     scale_color_viridis_c(name = "Pearson\nCorrelation", 
-                          limits = range(cor_df_long$value), 
-                          breaks = round(seq(max(cor_df_long$value), 
-                                       min(cor_df_long$value), length.out = 5), 2),
+                          limits = c(-1,1), #range(cor_df_long$value), 
+                          breaks = c(1.0, 0.5, 0.0, -0.5, -1.0) ,#round(seq(max(cor_df_long$value), min(cor_df_long$value), length.out = 5), 2),
                           guide = guide_legend(override.aes = 
                                                  list(size = c(5,2.5,1,2.5,5)), 
                                                  reverse = FALSE)) +
