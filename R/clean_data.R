@@ -154,3 +154,6 @@ source(here("R/update_iwi.R"))
 
 # Run new_nar_sites.R
 source(here("R/new_nar_sites.R"))
+
+# Run remove_y.R
+source(here("R/remove_y.R"))

@@ -8,3 +8,7 @@ y_out <- c("total_out, Aag_frt_in, winter_frt, harvest_rmvl, res_N, v1w_msq, sdd
 # Is Aag_frt_in same as ag_frt?
 y_out <-strsplit(y_out,", ")[[1]]
 
+wi <- wi %>%
+  filter(!variable %in% y_out)
+
+write_csv(wi, here("data/watershed_integrity_new_2.csv"))

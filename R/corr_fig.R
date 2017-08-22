@@ -32,7 +32,7 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   df <- tidyr::spread(df, key = variable, value = value)
   df <- dplyr::select(df, c(id_cols,y,x))
  
-  cor_df <- data.frame(cor(df[,-1:-4],use = "pairwise.complete.obs"))
+  cor_df <- data.frame(cor(df[,-1:-4],use = "pairwise.complete.obs",method = method))
   cor_df <- tibble::rownames_to_column(cor_df, "index")
   cor_df <- dplyr::filter(cor_df, stringr::str_detect(cor_df$index, paste(x,collapse = "|")))
   cor_df <- dplyr::select(cor_df, c("index",y))
@@ -40,9 +40,15 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   
   cor_df_long <- gather(cor_df, "variable", "value", -1)
   
+  if(method == "pearson"){
+    method_lab <- "Pearson\nCorrelation"
+  } else if (method == "spearman") {
+    method_lab <- "Spearman Rank\nCorrelation"
+  }
+  
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = abs(value), color = value)) + 
-    scale_color_viridis_c(name = "Pearson\nCorrelation", 
+    scale_color_viridis_c(name = method_lab, 
                           limits = c(-1,1), #range(cor_df_long$value), 
                           breaks = c(1.0, 0.5, 0.0, -0.5, -1.0) ,#round(seq(max(cor_df_long$value), min(cor_df_long$value), length.out = 5), 2),
                           guide = guide_legend(override.aes = 
