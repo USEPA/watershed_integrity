@@ -22,9 +22,9 @@
 #'  cal_y <- c("logNdif","dN15chironimid","total_in","xcmgw","xembed","fishMMI",
 #'  "max_tempC_summer","phase")
 #'  cal_x <- c("iwi", "ici","wchem","cchem","whabt","chabt","wsed","csed",
-#'             "whyd","chyd","wtemp","ctemp")
+#'  "whyd","chyd","wtemp","ctemp")
 #'  corr_fig(wi,"calapooia",cal_x,cal_y, filename = "cal_cor_fig.jpg",width = 7, 
-#'           height = 5, units = "in", dpi = 300)
+#'  height = 5, units = "in", dpi = 300)
 corr_fig <- function(data, ws, x, y, method = "pearson", 
                      output_csv = NULL, ...){
   id_cols <- names(data)[1:4]
@@ -38,8 +38,15 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   cor_df <- dplyr::select(cor_df, c("index",y))
   cor_df <- data.frame(index = cor_df[,1], round(cor_df[-1],2))
   
-  cor_df_long <- gather(cor_df, "variable", "value", -1)
-  
+  cor_df_long <- gather(cor_df, "variable", "value", -1) %>%
+    mutate(cor_size = case_when(abs(value) >= 0 & abs(value) < 0.2 ~ 2,
+                                abs(value) >= 0.2 & abs(value) < 0.4 ~ 2.5,
+                                abs(value) >= 0.4 & abs(value) < 0.6 ~ 3,
+                                abs(value) >= 0.6 & abs(value) < 0.8 ~ 3.5,
+                                abs(value) >= 0.8 & abs(value) <= 1.0 ~ 4),
+           index = fct_relevel(index, levels = c("iwi", "wtemp","wsed","whyd","whabt","wconn","wchem","ici",
+                                               "ctemp","csed","chyd","chabt","cconn","cchem")))
+
   if(method == "pearson"){
     method_lab <- "Pearson\nCorrelation"
   } else if (method == "spearman") {
@@ -47,19 +54,35 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   }
   
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
-    geom_point(aes(size = abs(value), color = value)) + 
-    scale_color_viridis_c(name = method_lab, 
-                          limits = c(-1,1), #range(cor_df_long$value), 
-                          breaks = c(1.0, 0.5, 0.0, -0.5, -1.0) ,#round(seq(max(cor_df_long$value), min(cor_df_long$value), length.out = 5), 2),
+    geom_point(aes(size = cor_size, color = value)) + 
+    scale_color_gradient2(name = "Pearson\nCorrelation",
+                          low = "darkred", mid = "grey80", high = "darkblue",
+                          limits = c(-1,1),
+                          breaks = c(1.0, 0.8, 0.6, 0.4, 0.2, -0.2, -0.4, -0.6, -0.8, -1.0),
+                          labels = c("1 to 0.8","0.8 to 0.6", "0.6 to 0.4", "0.4 to 0.2", 
+                                     "0.2 to 0", "0 to -0.2", "-0.2 to -0.4",
+                                     "-0.4 to -0.6", "-0.6 to -0.8", "-0.8 to -1"),
                           guide = guide_legend(override.aes = 
-                                                 list(size = c(5,2.5,1,2.5,5)), 
-                                                 reverse = FALSE)) +
-    scale_size(range = c(1,5), guide = FALSE) +
+                                                 list(size = c(4,3.5,3,2.5,2,2,2.5,3,3.5,4)), 
+                                               reverse = FALSE,
+                                               byrow = TRUE)) +
+    scale_size(range = c(2,4),guide = FALSE) +
     theme_ipsum() +
     scale_x_discrete(position = "top") +
     labs(x = "", y = "") +
     theme(legend.text = element_text(size = 10),
-          axis.text.x = element_text(angle= 45, hjust = 0))
+          axis.text.x = element_text(angle= 45, hjust = 0)) +
+    theme(text = element_text(size = 8),
+          #legend.text = element_text(size = 10),
+          plot.margin = grid::unit(c(1,1,1,1),"line"),
+          plot.title = element_text(hjust = 0, size = 9, 
+                                    margin = margin(t = 2, b=-5, unit="pt")),
+          axis.text.x = element_text(angle= 45, hjust = 0),
+          legend.key.width=unit(1.5, "line"), 
+          legend.key.height=unit(1.5, "line"),
+          legend.position = "bottom",
+          axis.text.y = element_text(hjust = 0),
+          legend.margin = margin(l = -100, unit="pt"))
   
   if(!is.null(output_csv)){
     readr::write_csv(cor_df, path = output_csv)
