@@ -55,7 +55,7 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = cor_size, color = value)) + 
-    scale_color_gradient2(name = "Pearson\nCorrelation",
+    scale_color_gradient2(name = method_lab,
                           low = "darkred", mid = "white", high = "darkblue",
                           limits = c(-1,1),
                           breaks = c(1.0, 0.8, 0.6, 0.4, 0.2, -0.2, -0.4, -0.6, -0.8, -1.0),

@@ -16,7 +16,7 @@ watersheds <- unique(wi$watershed)
 for(i in watersheds){
   ws_abb <- abbreviate(paste(i,collapse = ""))
   
-  if(ws_abb == "chpt"){
+  if(i == "choptank"){
     mtd <- "spearman"
   } else {
     mtd <- "pearson"
