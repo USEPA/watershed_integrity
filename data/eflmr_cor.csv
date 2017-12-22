@@ -1,4 +1,4 @@
-index,log10Tavg,log10TNH4aavg,log10TNOxaavg,log10DIavg,log10fDIavg,log10TNdif,log10TNH4dif,log10TNOxdif,log10DINdif,log10fDINdif
+index,log10Tavg,log10TNH4aavg,log10TNOxaavg,log10INavg,log10fINavg,log10TNdif,log10TNH4dif,log10TNOxdif,log10INdif,log10fINdif
 iwi,-0.78,-0.44,-0.64,-0.64,0.01,-0.61,-0.27,-0.76,-0.65,-0.1
 wtemp,-0.78,-0.45,-0.63,-0.64,0.03,-0.61,-0.28,-0.74,-0.65,-0.1
 wsed,-0.8,-0.49,-0.59,-0.61,0.08,-0.68,-0.33,-0.77,-0.69,-0.13

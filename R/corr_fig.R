@@ -39,11 +39,11 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   cor_df <- data.frame(index = cor_df[,1], round(cor_df[-1],2))
   
   cor_df_long <- gather(cor_df, "variable", "value", -1) %>%
-    mutate(cor_size = case_when(abs(value) >= 0 & abs(value) < 0.2 ~ 2,
-                                abs(value) >= 0.2 & abs(value) < 0.4 ~ 2.5,
-                                abs(value) >= 0.4 & abs(value) < 0.6 ~ 3,
-                                abs(value) >= 0.6 & abs(value) < 0.8 ~ 3.5,
-                                abs(value) >= 0.8 & abs(value) <= 1.0 ~ 4),
+    mutate(cor_size = case_when(abs(value) >= 0 & abs(value) < 0.2 ~ 1,
+                                abs(value) >= 0.2 & abs(value) < 0.4 ~ 3,
+                                abs(value) >= 0.4 & abs(value) < 0.6 ~ 5,
+                                abs(value) >= 0.6 & abs(value) < 0.8 ~ 7,
+                                abs(value) >= 0.8 & abs(value) <= 1.0 ~ 9),
            index = fct_relevel(index, levels = c("iwi", "wtemp","wsed","whyd","whabt","wconn","wchem","ici",
                                                "ctemp","csed","chyd","chabt","cconn","cchem")))
 
@@ -56,17 +56,17 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = cor_size, color = value)) + 
     scale_color_gradient2(name = "Pearson\nCorrelation",
-                          low = "darkred", mid = "grey80", high = "darkblue",
+                          low = "darkred", mid = "white", high = "darkblue",
                           limits = c(-1,1),
                           breaks = c(1.0, 0.8, 0.6, 0.4, 0.2, -0.2, -0.4, -0.6, -0.8, -1.0),
                           labels = c("1 to 0.8","0.8 to 0.6", "0.6 to 0.4", "0.4 to 0.2", 
                                      "0.2 to 0", "0 to -0.2", "-0.2 to -0.4",
                                      "-0.4 to -0.6", "-0.6 to -0.8", "-0.8 to -1"),
                           guide = guide_legend(override.aes = 
-                                                 list(size = c(4,3.5,3,2.5,2,2,2.5,3,3.5,4)), 
+                                                 list(size = c(9,7,5,3,1,1,3,5,7,9)), 
                                                reverse = FALSE,
                                                byrow = TRUE)) +
-    scale_size(range = c(2,4),guide = FALSE) +
+    scale_size(range = c(1,9),guide = FALSE) +
     theme_ipsum() +
     scale_x_discrete(position = "top") +
     labs(x = "", y = "") +
