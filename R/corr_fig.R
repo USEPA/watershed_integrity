@@ -72,7 +72,7 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
     labs(x = "", y = "") +
     theme(legend.text = element_text(size = 10),
           axis.text.x = element_text(angle= 45, hjust = 0)) +
-    theme(text = element_text(size = 8),
+    theme(text = element_text(size = 10),
           #legend.text = element_text(size = 10),
           plot.margin = grid::unit(c(1,1,1,1),"line"),
           plot.title = element_text(hjust = 0, size = 9, 
