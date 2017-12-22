@@ -157,3 +157,6 @@ source(here("R/new_nar_sites.R"))
 
 # Run remove_y.R
 source(here("R/remove_y.R"))
+
+# Remove specific variables identified during review
+source(here("R/clean_up_var.R"))
