@@ -3,7 +3,7 @@ library(tidyverse)
 library(here)
 library(stringr)
 library(hrbrthemes)
-library(ggjoy)
+library(ggridges)
 library(forcats)
 
 # Data munging
@@ -35,14 +35,14 @@ wi_index <- wi %>%
   mutate(variable = fct_relevel(variable, index_vars))
 
 index_all_ws_gg <- ggplot(wi_index, aes(x = value, y = variable)) +
-  geom_joy(rel_min_height = 0.001, scale = 0.9, bandwidth = 0.04) +
+  geom_density_ridges(rel_min_height = 0.001, scale = 0.9, bandwidth = 0.04) +
   facet_grid(. ~ watershed) +
   theme_ipsum() +
   labs(x = "", y = "") + 
   scale_x_continuous(breaks = c(0,0.3,0.6,0.9)) +
-  theme(strip.text.x = element_text(size = 9, hjust = 0.5),
-        axis.text.x = element_text(size = 8),
-        axis.text.y = element_text(size = 9))
+  theme(strip.text.x = element_text(size = 10, hjust = 0.5),
+        axis.text.x = element_text(size = 10),
+        axis.text.y = element_text(size = 10))
 index_all_ws_gg
 
 ggsave(filename = here("figures/iwi_ici_joy_ws_fig.jpg"), plot = index_all_ws_gg, width = 8, height = 5, 
