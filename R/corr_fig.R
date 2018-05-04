@@ -52,7 +52,9 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   } else if (method == "spearman") {
     method_lab <- "Spearman Rank\nCorrelation"
   }
-  
+
+  cor_df_long <- cor_df_long %>%
+    mutate(index = toupper(index))
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = cor_size, color = value)) + 
     scale_color_gradient2(name = method_lab,
@@ -67,7 +69,7 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
                                                reverse = FALSE,
                                                byrow = TRUE)) +
     scale_size(range = c(1,9),guide = FALSE) +
-    theme_ipsum() +
+    theme_ipsum(base_size = 12) +
     scale_x_discrete(position = "top") +
     labs(x = "", y = "") +
     theme(legend.text = element_text(size = 10),

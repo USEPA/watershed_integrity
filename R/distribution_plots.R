@@ -19,7 +19,7 @@ landscape <- read_csv(here("data/raw/lulc_4wtsheds.csv")) %>%
 wi <- wi %>%
   rbind(landscape) %>%
   mutate(watershed = factor(watershed, labels = c("Calapooia", "Choptank", 
-                                                  "East Fork Little\nMiami", 
+                                                  "East Fork\nLittle Miami", 
                                                   "Narragansett\nBay")))
 
 index_vars <- c("iwi", "wtemp","wsed","whyd","whabt","wconn","wchem",
@@ -31,19 +31,21 @@ index_vars <- index_vars[length(index_vars):1]
 
 # Joy plots of distribution of all index components by study area
 wi_index <- wi %>%
-  filter(variable %in% index_vars) %>%
-  mutate(variable = fct_relevel(variable, index_vars))
+  filter(toupper(variable) %in% toupper(index_vars)) %>%
+  mutate(variable = fct_relevel(toupper(variable), toupper(index_vars)))
 
 index_all_ws_gg <- ggplot(wi_index, aes(x = value, y = variable)) +
   geom_density_ridges(rel_min_height = 0.001, scale = 0.9, bandwidth = 0.04) +
   facet_grid(. ~ watershed) +
-  theme_ipsum() +
+  theme_ipsum(base_size = 12) +
   labs(x = "", y = "") + 
-  scale_x_continuous(breaks = c(0,0.3,0.6,0.9)) +
-  theme(strip.text.x = element_text(size = 10, hjust = 0.5),
-        axis.text.x = element_text(size = 10),
-        axis.text.y = element_text(size = 10))
+  scale_x_continuous(breaks = c(0,0.5,1)) +
+  theme(strip.text.x = element_text(size = 12, hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        panel.spacing.x = unit(0.25, "cm"),
+        plot.margin = unit(c(0.1,0.1,0.1,0.1), "cm"))
 index_all_ws_gg
 
-ggsave(filename = here("figures/iwi_ici_joy_ws_fig.jpg"), plot = index_all_ws_gg, width = 8, height = 5, 
+ggsave(filename = here("figures/iwi_ici_joy_ws_fig.tiff"), plot = index_all_ws_gg, width = 6, height = 5, 
        units = "in", dpi = 300)

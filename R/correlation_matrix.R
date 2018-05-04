@@ -30,7 +30,7 @@ for(i in watersheds){
     unique() %>%
     corr_fig(data = wi, ws = i, x = x, y = ., 
              output_csv = paste0("data/", ws_abb, "_cor.csv"),
-             filename = paste0("figures/", ws_abb, "_cor_fig.jpg"), 
-             width = 8.5,height = 8, units = "in", dpi = 300, method = mtd)
+             filename = paste0("figures/", ws_abb, "_cor_fig.tiff"), 
+             width = 7,height = 7, units = "in", dpi = 300, method = mtd)
 }
 
