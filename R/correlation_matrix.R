@@ -40,8 +40,5 @@ for(i in watersheds){
              filename = paste0("figures/figure",fig_num,".tiff"), 
              width = 6.5, height = 6.5, units = "in", pointsize = 12, dpi = 1000, 
              compression = "lzw")
-  #tiff()
-  #gg
-  #dev.off()
 }
 

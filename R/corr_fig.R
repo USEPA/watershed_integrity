@@ -54,13 +54,15 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   }
   cor_df_long <- cor_df_long %>%
     mutate(index = toupper(index)) %>%
-    mutate(variable = case_when(variable == "dN15chironomid" ~ "δ15N chironomid"),
+    mutate(variable = case_when(variable == "dN15chironomid" ~ "δ^15~N~~chironomid",
                                 variable == "logNaavg" ~ "log10Naavg",
                                 variable == "logNdif" ~ "log10Ndif",
                                 variable == "total_in" ~ "TN_in",
-                                variable == "pN15" ~ "δ15N periphyton",
-                                variable == "d15NBOM" ~ "δ^15N BOM",
-                                TRUE ~ variable)
+                                variable == "pN15" ~ "δ^15~N~~periphyton",
+                                variable == "d15NBOM" ~ "δ^15~N~~BOM",
+                                TRUE ~ variable)) %>%
+    mutate(variable = factor(variable))
+
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = cor_size, color = value)) + 
     scale_color_gradient2(name = method_lab,
@@ -75,6 +77,7 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
                                                reverse = FALSE,
                                                byrow = TRUE)) +
     scale_size(range = c(1,9),guide = FALSE) +
+    scale_y_discrete(labels = parse(text = levels(cor_df_long$variable))) +
     theme_ipsum(base_size = 12) +
     scale_x_discrete(position = "top") +
     labs(x = "", y = "") +
