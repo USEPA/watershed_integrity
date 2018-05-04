@@ -48,7 +48,7 @@ index_all_ws_gg <- ggplot(wi_index, aes(x = value, y = variable)) +
         panel.spacing.x = unit(0.25, "cm"),
         plot.margin = unit(c(0.1,0.1,0.1,0.1), "cm"))
 
-tiff(filename = here("figures/iwi_ici_joy_ws_fig.tiff"), width = 5, height = 5, 
+tiff(filename = here("figures/figure5.tiff"), width = 5, height = 5, 
      units = "in", pointsize = 12, res=1000, compression="lzw")
 index_all_ws_gg
 dev.off()  # This closes the tiff device after drawing the fig

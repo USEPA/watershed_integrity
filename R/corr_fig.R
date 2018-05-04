@@ -52,9 +52,15 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   } else if (method == "spearman") {
     method_lab <- "Spearman Rank\nCorrelation"
   }
-
   cor_df_long <- cor_df_long %>%
-    mutate(index = toupper(index))
+    mutate(index = toupper(index)) %>%
+    mutate(variable = case_when(variable == "dN15chironomid" ~ "δ15N chironomid"),
+                                variable == "logNaavg" ~ "log10Naavg",
+                                variable == "logNdif" ~ "log10Ndif",
+                                variable == "total_in" ~ "TN_in",
+                                variable == "pN15" ~ "δ15N periphyton",
+                                variable == "d15NBOM" ~ "δ^15N BOM",
+                                TRUE ~ variable)
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = cor_size, color = value)) + 
     scale_color_gradient2(name = method_lab,
@@ -72,19 +78,19 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
     theme_ipsum(base_size = 12) +
     scale_x_discrete(position = "top") +
     labs(x = "", y = "") +
-    theme(legend.text = element_text(size = 10),
+    theme(legend.text = element_text(size = 12),
           axis.text.x = element_text(angle= 45, hjust = 0)) +
-    theme(text = element_text(size = 10),
+    theme(text = element_text(size = 12),
           #legend.text = element_text(size = 10),
           plot.margin = grid::unit(c(1,1,1,1),"line"),
-          plot.title = element_text(hjust = 0, size = 11, 
+          plot.title = element_text(hjust = 0, size = 12, 
                                     margin = margin(t = 2, b=-5, unit="pt")),
           axis.text.x = element_text(angle= 45, hjust = 0),
           legend.key.width=unit(1.5, "line"), 
           legend.key.height=unit(1.5, "line"),
           legend.position = "bottom",
           axis.text.y = element_text(hjust = 0),
-          legend.margin = margin(l = -100, unit="pt"))
+          legend.margin = margin(l = -50, unit="pt"))
   
   if(!is.null(output_csv)){
     readr::write_csv(cor_df, path = output_csv)
