@@ -52,6 +52,9 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
   } else if (method == "spearman") {
     method_lab <- "Spearman Rank\nCorrelation"
   }
+  index_vars <- c("IWI", "WTEMP","WSED","WHYD","WHABT","WCONN","WCHEM",
+                  "ICI","CTEMP","CSED","CHYD","CHABT","CCONN","CCHEM")
+  #index_vars <- index_vars[length(index_vars):1]
   cor_df_long <- cor_df_long %>%
     mutate(index = toupper(index)) %>%
     mutate(variable = case_when(variable == "dN15chironomid" ~ "δ^15~N~~chironomid",
@@ -61,7 +64,8 @@ corr_fig <- function(data, ws, x, y, method = "pearson",
                                 variable == "pN15" ~ "δ^15~N~~periphyton",
                                 variable == "d15NBOM" ~ "δ^15~N~~BOM",
                                 TRUE ~ variable)) %>%
-    mutate(variable = factor(variable))
+    mutate(variable = factor(variable),
+           index = fct_relevel(index, index_vars))
 
   cor_gg <- ggplot(cor_df_long, aes(x = index, y = variable)) +
     geom_point(aes(size = cor_size, color = value)) + 
